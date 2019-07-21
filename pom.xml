@@ -8,9 +8,13 @@
     <version>2.1.6.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
+
   <groupId>guru.springframework.joke</groupId>
   <artifactId>jokeapp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <packaging>jar</packaging>
+
   <name>jokeapp</name>
   <description>Joke app for Spring Boot</description>
 
@@ -19,6 +23,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>guru.springframework</groupId>
+      <artifactId>chuck-norris-for-actuator</artifactId>
+      <version>0.0.2</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
